@@ -1,0 +1,12 @@
+# Problem 2
+# Allow the user to enter a stock ticker symbol, number of shares, and cost per share.
+# Compute and display the amount invested (shares * cost per share).
+
+ticker = input("Enter stock ticker symbol: ")
+shares = float(input("Enter number of shares: "))
+cost_per_share = float(input("Enter cost per share: $"))
+
+amount_invested = shares * cost_per_share
+
+print(f"Ticker: {ticker}")
+print(f"Amount invested: ${amount_invested:.2f}")

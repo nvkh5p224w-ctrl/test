@@ -1,0 +1,10 @@
+# Problem 4
+# You and two friends (3 people total) completed a job and received a payment amount.
+# Split the amount received evenly between the three of you.
+# Compute and display what each person will receive.
+
+amount_received = float(input("Enter the total amount received: $"))
+
+each_share = amount_received / 3
+
+print(f"Each person receives: ${each_share:.2f}")

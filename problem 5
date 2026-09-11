@@ -1,0 +1,18 @@
+# Problem 5
+# Input the purchase price per share, current stock price, and quantity of stock.
+# Compute the increase (or decrease) in value:
+# Value = (current price - purchase price) * quantity
+# A negative amount means a loss.
+
+purchase_price = float(input("Enter the purchase price per share: $"))
+current_price = float(input("Enter the current stock price: $"))
+quantity = float(input("Enter the quantity of shares: "))
+
+value_change = (current_price - purchase_price) * quantity
+
+if value_change < 0:
+    print(f"You have a loss of: ${abs(value_change):.2f}")
+else:
+    print(f"You have a gain of: ${value_change:.2f}")
+
+print(f"Total change in value: ${value_change:.2f}")

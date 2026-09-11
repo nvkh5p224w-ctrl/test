@@ -1,0 +1,13 @@
+# Problem 3
+# The student enters their last name, midterm score, and final exam score (0-100).
+# Total exam points = 40% of midterm + 60% of final.
+# Display the student's last name and total exam points.
+
+last_name = input("Enter your last name: ")
+midterm = float(input("Enter midterm exam score (0-100): "))
+final_exam = float(input("Enter final exam score (0-100): "))
+
+total_points = (midterm * 0.40) + (final_exam * 0.60)
+
+print(f"Student: {last_name}")
+print(f"Total exam points: {total_points:.2f}")

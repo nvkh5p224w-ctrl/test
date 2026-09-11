@@ -1,0 +1,10 @@
+# Problem 1
+# Allow the user to enter two exam scores. Exam 1 is worth 60% of the total,
+# Exam 2 is worth 40%. Calculate and display the total weighted score.
+
+exam1 = float(input("Enter score for Exam 1: "))
+exam2 = float(input("Enter score for Exam 2: "))
+
+total_score = (exam1 * 0.60) + (exam2 * 0.40)
+
+print(f"Total weighted score: {total_score:.2f}")
