@@ -1,0 +1,18 @@
+# Module 5 & 6 - Problem 5
+
+quantity = int(input("Enter number of concert tickets: "))
+
+if quantity >= 25:
+    price_per_ticket = 50.00
+elif quantity >= 10:
+    price_per_ticket = 60.00
+elif quantity >= 5:
+    price_per_ticket = 70.00
+else:
+    price_per_ticket = 75.00
+
+total_cost = quantity * price_per_ticket
+
+print()
+print(f"{'Tickets':<15}{'Price Per Ticket':>20}{'Total Cost':>15}")
+print(f"{quantity:<15}{price_per_ticket:>20.2f}{total_cost:>15.2f}")

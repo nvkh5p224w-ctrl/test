@@ -1,0 +1,18 @@
+# Module 5 & 6 - Problem 2
+
+quantity = int(input("Enter quantity of widgets: "))
+
+if quantity > 10000:
+    price = 10.00
+elif quantity >= 5000:
+    price = 20.00
+else:
+    price = 30.00
+
+extended_price = quantity * price
+tax = extended_price * 0.07
+total = extended_price + tax
+
+print()
+print(f"{'Quantity':<15}{'Price':>12}{'Extended Price':>18}{'Tax':>12}{'Total':>12}")
+print(f"{quantity:<15}{price:>12.2f}{extended_price:>18.2f}{tax:>12.2f}{total:>12.2f}")

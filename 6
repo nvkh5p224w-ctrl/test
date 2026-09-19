@@ -1,0 +1,18 @@
+# Module 5 & 6 - Problem 6
+
+last_name = input("Enter employee last name: ")
+salary = float(input("Enter salary: "))
+job_level = int(input("Enter job level: "))
+
+if job_level >= 10:
+    bonus_rate = 0.25
+elif job_level >= 5:
+    bonus_rate = 0.20
+else:
+    bonus_rate = 0.10
+
+bonus = salary * bonus_rate
+
+print()
+print(f"{'Employee':<15}{'Salary':>15}{'Bonus Rate':>15}{'Bonus':>15}")
+print(f"{last_name:<15}${salary:>14.2f}{bonus_rate * 100:>14.2f}%${bonus:>14.2f}")
