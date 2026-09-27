@@ -1,0 +1,32 @@
+# Module 7 - Problem 5
+
+file = open("/Users/v/HOMEWORK/module 6 /students.txt", "r")
+
+total_tuition = 0
+student_count = 0
+
+last_name = file.readline().strip()
+
+while last_name != "":
+    district = file.readline().strip()
+    credits = int(file.readline().strip())
+
+    if district == "I":
+        cost_per_credit = 250.00
+    else:
+        cost_per_credit = 500.00
+
+    tuition = credits * cost_per_credit
+
+    total_tuition += tuition
+    student_count += 1
+
+    print(f"{last_name:<15}{credits:>10}{tuition:>15,.2f}")
+
+    last_name = file.readline().strip()
+
+file.close()
+
+print()
+print(f"Total tuition owed: ${total_tuition:,.2f}")
+print(f"Number of students: {student_count}")

@@ -1,0 +1,29 @@
+# Module 7 - Problem 3
+
+file = open("employees.txt", "r")
+
+total_bonus = 0
+
+last_name = file.readline().strip()
+
+while last_name != "":
+    salary = float(file.readline())
+
+    if salary >= 100000:
+        bonus_rate = 0.20
+    elif salary >= 50000:
+        bonus_rate = 0.15
+    else:
+        bonus_rate = 0.10
+
+    bonus = salary * bonus_rate
+    total_bonus += bonus
+
+    print(f"{last_name:<15}${salary:>12,.2f}${bonus:>12,.2f}")
+
+    last_name = file.readline().strip()
+
+file.close()
+
+print()
+print(f"Total bonuses paid: ${total_bonus:,.2f}")

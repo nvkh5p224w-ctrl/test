@@ -1,0 +1,24 @@
+# Module 7 - Problem 6
+
+response = input("Do you want to enter student data? ")
+
+student_count = 0
+
+while response == "Yes" or response == "yes":
+
+    last_name = input("Enter student's last name: ")
+    exam1 = float(input("Enter first exam score: "))
+    exam2 = float(input("Enter second exam score: "))
+
+    average = (exam1 + exam2) / 2
+
+    print()
+    print(f"{'Last Name':<15}{'Average':>10}")
+    print(f"{last_name:<15}{average:>10.2f}")
+
+    student_count += 1
+
+    response = input("Do you want to enter another student? ")
+
+print()
+print(f"Number of students entered: {student_count}")
